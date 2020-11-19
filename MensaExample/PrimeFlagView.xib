@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11129.15" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="Sf0-gB-afY" customClass="PrimeFlagView" customModule="MensaExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leB-Uu-SOM">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSI-Bn-8d2">
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="XA4-fr-ZGA"/>
+                        <constraint firstAttribute="height" constant="20" id="p0L-Ge-3j1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jn-ND-Ttx">
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="3MZ-Zv-lMK"/>
+                        <constraint firstAttribute="width" constant="20" id="VdJ-bI-oAx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2jn-ND-Ttx" secondAttribute="trailing" constant="10" id="S4n-4v-m7B"/>
+                <constraint firstAttribute="bottom" secondItem="leB-Uu-SOM" secondAttribute="bottom" constant="20" id="fWW-7p-x1r"/>
+                <constraint firstItem="leB-Uu-SOM" firstAttribute="top" secondItem="Sf0-gB-afY" secondAttribute="top" constant="20" id="hZe-5b-vO1"/>
+                <constraint firstItem="leB-Uu-SOM" firstAttribute="centerX" secondItem="Sf0-gB-afY" secondAttribute="centerX" id="iG0-af-Gy8"/>
+                <constraint firstItem="leB-Uu-SOM" firstAttribute="centerY" secondItem="PSI-Bn-8d2" secondAttribute="centerY" id="pu9-XF-031"/>
+                <constraint firstItem="2jn-ND-Ttx" firstAttribute="centerY" secondItem="leB-Uu-SOM" secondAttribute="centerY" id="sq9-TX-Red"/>
+                <constraint firstItem="PSI-Bn-8d2" firstAttribute="leading" secondItem="Sf0-gB-afY" secondAttribute="leading" constant="10" id="u1K-cE-1Uf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textLabel" destination="leB-Uu-SOM" id="XrD-IK-58u"/>
+            </connections>
+            <point key="canvasLocation" x="61" y="-256"/>
+        </view>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="IFH-Lb-wN5" userLabel="Compact Prime Flag View" customClass="PrimeFlagView" customModule="MensaExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUA-rP-0c8">
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NUA-rP-0c8" firstAttribute="top" secondItem="IFH-Lb-wN5" secondAttribute="top" constant="8" id="Gx3-3G-lhB"/>
+                <constraint firstAttribute="bottom" secondItem="NUA-rP-0c8" secondAttribute="bottom" constant="8" id="Mpt-TH-sw7"/>
+                <constraint firstAttribute="trailing" secondItem="NUA-rP-0c8" secondAttribute="trailing" constant="8" id="RBC-cM-Rfu"/>
+                <constraint firstItem="NUA-rP-0c8" firstAttribute="leading" secondItem="IFH-Lb-wN5" secondAttribute="leading" constant="8" id="k8y-gn-gx3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="61" y="-106"/>
+        </view>
+    </objects>
+</document>

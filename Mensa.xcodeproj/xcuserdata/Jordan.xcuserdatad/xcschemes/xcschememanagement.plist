@@ -4,38 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Controller.xcscheme_^#shared#^_</key>
+		<key>Mensa.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>0</integer>
 		</dict>
 		<key>MensaExample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
-		</dict>
-		<key>Model.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-		<key>View.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>17DFC9EF225E7E9C00871C7D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>17F803042255940300212525</key>
-		<dict>
-			<key>primary</key>
-			<true/>
 		</dict>
 	</dict>
 </dict>
