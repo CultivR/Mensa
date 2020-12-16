@@ -619,10 +619,14 @@ private extension DataMediator {
             view.setNeedsLayout()
             view.layoutIfNeeded()
             
-            let size = view.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
-            let height = (size.height == 0) ? view.bounds.height : size.height
-            heightCache[identifier] = height
-            return height
+            var height: CGFloat = view.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
+            if view.detailLabel?.text?.isEmpty == false {
+                height += SupplementaryView.marging
+            }
+            
+            let finalHeight = ((height == 0) ? view.bounds.height : height) //+ 25
+            heightCache[identifier] = finalHeight
+            return finalHeight
         }()
         return CGSize(width: 0, height: height)
     }

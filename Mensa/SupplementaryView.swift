@@ -7,6 +7,8 @@
 //
 
 public class SupplementaryView: UICollectionReusableView {
+    static var marging: CGFloat = 25.0
+    
     @IBOutlet public private(set) var label: UILabel!
     @IBOutlet public private(set) var detailLabel: UILabel?
 }
